@@ -1,0 +1,47 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image:url(../images/Hero/cabecera-mothers-of-code.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 420px;
+
+    &__name-section {
+        background-color:$secondary-color;
+        text-transform: uppercase;
+        height: 60px;
+        padding: 20px 80px;
+        opacity: 0.95;
+    }
+    &__name {
+        font-family:$fontfamily-name-header; 
+        font-weight: $fontweight-name-header;
+        font-size: $fontsize-name-header;
+        color: white;
+    }
+    &__nav{
+        
+        background-color:$primary-color;
+        text-transform: uppercase;
+        width: auto;
+        height: 60px;
+        padding: 20px 20px;
+        opacity: 0.95;
+        font-family: $fontfamily-menu;
+        font-weight: $fontweightname-menu;
+       
+      }
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__menu-list, &__menu-links {
+        list-style: none;
+        color: white;
+        text-decoration: none;
+    }
+
+}
