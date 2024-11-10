@@ -24,6 +24,12 @@ $secondary-text-color: #54585a;
 $tertiary-text-color: #b8b8b9;
 
 
+@mixin mobile {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
 @mixin tablet {
     @media (min-width: 768px) and (max-width: 1200px) {
         @content;
