@@ -9,8 +9,19 @@ $fontfamily-menu: "Rubik";
 $fontweightname-menu:500;
 $fontsize-name-menu: 15px;
 
+$fontfamily-section-adalabers-title: "Rubik";
+$fontweight-section-adalabers-title: 500; 
+$fontsize-section-adalabers-title: 24px;
+
+$fontfamily-text: "Open Sans";
+$fontweight-title-article: normal; 
+
 $primary-color: #14d9c4;
 $secondary-color: #099d8d;
+$background-color: #f1f1f1;
+$primary-text-color: #000000;
+$secondary-text-color: #54585a;
+$tertiary-text-color: #b8b8b9;
 
 
 @mixin tablet {

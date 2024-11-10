@@ -1,0 +1,56 @@
+.section-adalabers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &__title {
+        color: $secondary-color;
+        font-family: $fontfamily-section-adalabers-title;
+        font-weight: $fontweight-section-adalabers-title;
+        font-size: $fontsize-section-adalabers-title;
+        margin-bottom: 25px;
+    }
+
+    &__article--photo {
+        width: 180px;
+        border-radius: 7px;
+        border: solid 5px $background-color;
+        margin-bottom: 25px;
+    }
+
+    &__article--title {
+        font-family: $fontfamily-text;
+        font-weight: $fontweight-title-article;
+    }
+
+    &__article--paragraph {
+        color: $secondary-text-color;
+        margin-inline: 25px;
+        margin-block: 25px;
+    }
+
+    &__article--socialmedia {
+        color: $secondary-color;
+        margin-bottom: 25px;
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+
+        i {
+            position: relative;
+
+        &::after {
+            content: "\00b7";  // Esto es el código Unicode para el punto medio (·)
+            margin-left: 8px;
+            color: $secondary-text-color;
+            align-items: center;
+        }
+
+        &:last-child::after {
+            content: "";
+        }
+
+    }
+}
+}
