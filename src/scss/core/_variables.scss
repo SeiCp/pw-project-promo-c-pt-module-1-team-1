@@ -11,3 +11,22 @@ $fontsize-name-menu: 15px;
 
 $primary-color: #14d9c4;
 $secondary-color: #099d8d;
+
+
+@mixin tablet {
+    @media (min-width: 768px) and (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin tablet-desktop {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
