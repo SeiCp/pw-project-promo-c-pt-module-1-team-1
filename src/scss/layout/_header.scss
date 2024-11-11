@@ -1,28 +1,29 @@
 .header {
     display: flex;
     flex-direction: column;
+    width: 100%;
     text-align: center;
-    background-image: url(../images/Hero/cabecera-mothers-of-code.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 420px;
-    margin-bottom:80px ;
+    background-color: $secondary-color;
 
+    position: fixed;
+    top: 0;
+    left: 0;
     @media (width > 768px) {
         flex-direction: row;
-
+        justify-content: space-between;
+        
+ 
     }
 
+
     &__name-section {
-        background-color: $secondary-color;
         text-transform: uppercase;
         height: 60px;
         padding: 20px 80px;
         opacity: 0.95;
-    
-        
+
     }
+
 
     &__name {
         font-family: $fontfamily-name-header;
@@ -30,7 +31,7 @@
         font-size:$fontsize-name-header;
         color: white;
         @media (width > 768px) {
-      
+        
         }
     
         
@@ -40,7 +41,8 @@
 
         background-color: $primary-color;
         text-transform: uppercase;
-        width: auto;
+        padding-inline: 15px;
+      
         height: 60px;
         padding: 20px 20px;
         opacity: 0.95;
@@ -49,13 +51,16 @@
         font-weight: $fontweightname-menu;
         @media (width > 768px) {
             background-color: $secondary-color;
-        
         }
     }
 
     &__menu {
         display: flex;
         justify-content: space-between;
+        @media (width > 768px) {
+            
+            
+        }
     }
 
     &__menu-list,
@@ -63,20 +68,13 @@
         list-style: none;
         color: white;
         text-decoration: none;
+        @media (width > 768px) {
+            
+            margin-inline: 10px;
+        }
+    
     }
+ 
 
 }
 
-.hero {
-    background-color: white;
-    height: 80px;
-    margin-inline: 15px;
-    padding: 14px 15px 16px;
-    margin-top: 280px;
-    @media (width > 768px) {
-    }
-    &__slogan {
-        font-size:$fontsize-slogan ;
-        font-weight: $fontweight-slogan;
-    }
-}
