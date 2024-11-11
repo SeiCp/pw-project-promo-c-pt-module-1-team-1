@@ -9,12 +9,19 @@
     height: 420px;
     margin-bottom:80px ;
 
+    @media (width > 768px) {
+        flex-direction: row;
+
+    }
+
     &__name-section {
         background-color: $secondary-color;
         text-transform: uppercase;
         height: 60px;
         padding: 20px 80px;
         opacity: 0.95;
+    
+        
     }
 
     &__name {
@@ -22,6 +29,11 @@
         font-weight: $fontweight-name-header;
         font-size:$fontsize-name-header;
         color: white;
+        @media (width > 768px) {
+      
+        }
+    
+        
     }
 
     &__nav {
@@ -35,6 +47,10 @@
         font-size: $fontsize-name-menu;
         font-family: $fontfamily-menu;
         font-weight: $fontweightname-menu;
+        @media (width > 768px) {
+            background-color: $secondary-color;
+        
+        }
     }
 
     &__menu {
@@ -49,17 +65,18 @@
         text-decoration: none;
     }
 
-    &__hero {
-        background-color: white;
-        height: 80px;
-        margin-inline: 15px;
-        padding: 14px 15px 16px;
-        margin-top: 280px;
-      
+}
+
+.hero {
+    background-color: white;
+    height: 80px;
+    margin-inline: 15px;
+    padding: 14px 15px 16px;
+    margin-top: 280px;
+    @media (width > 768px) {
     }
-    &__hero-slogan {
+    &__slogan {
         font-size:$fontsize-slogan ;
         font-weight: $fontweight-slogan;
     }
-
 }
