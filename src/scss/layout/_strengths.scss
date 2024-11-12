@@ -2,13 +2,45 @@
    text-align: center;
    .teams-title{
       color: $primary-color;
-      font-family: $font-family-teams-title;
-      font-weight: $fontweight-teams-title;
+      font-family: $font-family-tsw-title;
+      font-weight: $fontweight-tsw-title ;
    }
    .teams-paragraph{
       color: $secondary-text-color;
       font-family: $fontfamily-text;
-
+      margin: 15px 15px 30px 15px;
    }
-   
+
+   .square{
+      width: 30px;
+      height: 30px;
+      color: $background-color;
+      transform: rotate(45deg);
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+   }
+
+   .strengths-and-weaknesses{
+      background-color: #b8b8b9;
+      padding-bottom: 45px;
+   }
+
+   .s-w-title{
+      color: $secondary-color;
+      font-family: $font-family-tsw-title;
+      font-weight: $fontweight-tsw-title;
+      font-size: 22px;
+      padding-top: 30px;
+      margin-inline: 15px;
+      line-height: 2.05;
+   }
+
+   .s-w-paragraph{
+      color: $secondary-text-color;
+      font-family: $fontfamily-text;
+      margin-inline: 15px;
+      }
 }
