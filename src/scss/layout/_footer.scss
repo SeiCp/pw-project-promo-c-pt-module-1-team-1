@@ -14,7 +14,7 @@
     border-top: solid 2px;
     border-color: $tertiary-text-color;
 
-    @include tablet-desktop {
+    @include tablet {
         grid-template-areas: 
         "title menu"
         "logo menu";
@@ -28,7 +28,7 @@
         text-align: center;
         grid-area: title;
 
-        @include tablet-desktop {
+        @include tablet {
             text-align: start;
             font-size: 16px;
         }
@@ -37,7 +37,7 @@
     &__nav {
         grid-area: menu;
 
-        @include tablet-desktop {
+        @include tablet {
             line-height: 37px;
         }
     }
@@ -54,7 +54,7 @@
         font-weight: 500;
         text-align: center;
 
-        @include tablet-desktop {
+        @include tablet {
             text-align: end;
             font-size: 16px;
         }
@@ -68,7 +68,7 @@
         margin-block: 20px;
         grid-area: logo;
 
-        @include tablet-desktop {
+        @include tablet {
             margin-inline: 0px;
             margin-bottom: 0px;
             margin-top: 10px;
