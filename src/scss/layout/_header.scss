@@ -4,6 +4,8 @@
     width: 100%;
     text-align: center;
     background-color: $secondary-color;
+    position: sticky;
+    z-index: 1;
 
     position: fixed;
     top: 0;
