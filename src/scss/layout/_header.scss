@@ -11,9 +11,11 @@
     @media (width > 768px) {
         flex-direction: row;
         justify-content: space-between;
-        
- 
+        padding-inline: 45px;
     }
+    @media (width > 1200px){
+        padding-inline: 140px;
+    } 
 
 
     &__name-section {
