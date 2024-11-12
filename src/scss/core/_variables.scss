@@ -33,7 +33,7 @@ $tertiary-text-color: #b8b8b9;
 }
 
 @mixin tablet {
-    @media (min-width: 768px) 
+    @media (min-width: 768px) {
         @content;
     }
 }
