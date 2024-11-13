@@ -22,6 +22,10 @@
         gap: 0px;
     }
 
+    @include desktop {
+        grid-template-columns: 750px;
+    }
+
     &__mothers-of-code {
         font-size: 14px;
         color: $tertiary-text-color;
@@ -61,11 +65,11 @@
     }
 
     &__logo-adalab {
-        width: 160px;
+        width: 120px;
         height: auto;
         display: block;
         margin-inline: auto;
-        margin-block: 20px;
+        margin-block: 10px;
         grid-area: logo;
 
         @include tablet {
