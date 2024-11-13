@@ -5,18 +5,16 @@
     text-align: center;
     background-color: $secondary-color;
     opacity: 0.95;
-    position: sticky;
-    z-index: 1;
-
     position: fixed;
     top: 0;
-    left: 0;
-    @media (width > 768px) {
+    
+
+    @include tablet {
         flex-direction: row;
         justify-content: space-between;
         padding-inline: 45px;
     }
-    @media (width > 1200px){
+    @include desktop{
         padding-inline: 140px;
     } 
 
@@ -35,10 +33,7 @@
         font-weight: $fontweight-name-header;
         font-size:$fontsize-name-header;
         color: white;
-        @media (width > 768px) {
-        
-        }
-    
+
         
     }
 
@@ -54,7 +49,7 @@
         font-size: $fontsize-name-menu;
         font-family: $fontfamily-menu;
         font-weight: $fontweightname-menu;
-        @media (width > 768px) {
+        @include tablet {
             background-color: $secondary-color;
         }
     }
@@ -62,7 +57,7 @@
     &__menu {
         display: flex;
         justify-content: space-between;
-        @media (width > 768px) {
+        @include tablet{
             
             
         }
@@ -73,7 +68,7 @@
         list-style: none;
         color: white;
         text-decoration: none;
-        @media (width > 768px) {
+        @include tablet{
             
             margin-inline: 10px;
         }
