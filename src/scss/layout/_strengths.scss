@@ -14,17 +14,15 @@
    .square{
       width: 30px;
       height: 30px;
-      color: $background-color;
-      transform: rotate(45deg);
+      background-color: $background-color;
 
       position: absolute;
-      top: 50%;
       left: 50%;
       transform: translate(-50%, -50%) rotate(45deg);
    }
 
    .strengths-and-weaknesses{
-      background-color: #b8b8b9;
+      background-color: rgb(184, 184, 185);
       padding-bottom: 45px;
    }
 
