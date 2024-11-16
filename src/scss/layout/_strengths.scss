@@ -44,7 +44,17 @@
 }
 
 @include tablet{
-.strengths-and-weaknesses{
-   display: flex;
-}
+   .teams{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .strengths-and-weaknesses{
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      padding-inline: 45px;
+      padding-bottom: 15px;
+   }
+   
 }
