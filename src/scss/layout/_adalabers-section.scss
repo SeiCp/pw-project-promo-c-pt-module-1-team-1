@@ -42,7 +42,7 @@
         }
     }
 
-    &__article--title {
+    &__title {
         font-family: $fontfamily-text;
         font-weight: $fontweight-title-article;
     }
@@ -51,7 +51,7 @@
         grid-area: title;
     }
 
-    &__article--photo {
+    &__photo {
         width: 180px;
         border-radius: 7px;
         border: solid 5px $background-color;
@@ -70,7 +70,7 @@
         }
     }
 
-    &__article--paragraph {
+    &__paragraph {
         color: $secondary-text-color;
         margin-inline: 25px;
         margin-block: 25px;
@@ -81,10 +81,9 @@
         }
     }
 
-    &__article--socialmedia {
+    &__socialmedia {
         color: $secondary-color;
         margin-bottom: 25px;
-    
 
         i {
             position: relative;
@@ -106,4 +105,12 @@
             grid-area: socialmedia;
         }
     }
+
+    .icon {
+        text-decoration: none;
+        color: #099d8d;
+
+        a:visited { color: black; text-decoration: none; }
+    }
+    
 }
