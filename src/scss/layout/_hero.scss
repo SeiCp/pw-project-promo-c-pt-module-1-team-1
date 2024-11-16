@@ -5,6 +5,8 @@
     background-size: cover;
     background-position: center;
     height: 500px;
+    margin-bottom: 80px;
+    position: relative;
  
     @include desktop {
         height: 550px;
@@ -12,32 +14,35 @@
 
 
     &__slogan {
+        position: absolute;
         background-color: white;
+        color: black;
         margin: 387px 15px 0;
         padding: 14px 15px 16px;
-       text-align: center;
-       align-items: center;
+        text-align: center;
+        align-items: center;
         font-size:$fontsize-slogan ;
         font-weight: $fontweight-slogan;
-        margin-top: -60px;
-        margin-bottom: 50px;
+        margin-top:450px;
+      
         @media (width > 532px) {
-            width: 441px;
+            width: 440px;
             height: 80px;
             padding: 15px 30px;
             opacity: 0.8;
             text-align: left;
-            margin-top: -70px;
+            margin-top: 420px;
             margin-left:50px ;
         
         }
         @include desktop {
             font-size: $fontsize-slogan-desktop;
             line-height: $lineheight-slogan-desktop;
-            margin-left:200px ;
+            margin-left:0px ;
             width: 574px;
             height: 90px;
-            margin-top: -90px;
+            margin-top: 460px;
+            margin-left: 220px;
         }
     }
 }
