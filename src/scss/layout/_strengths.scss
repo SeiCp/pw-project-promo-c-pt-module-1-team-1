@@ -14,7 +14,7 @@
    .square{
       width: 30px;
       height: 30px;
-      background-color: $background-color;
+      background-color: white;
 
       position: absolute;
       left: 50%;
@@ -41,4 +41,19 @@
       font-family: $fontfamily-text;
       margin-inline: 15px;
       }
+}
+
+@include tablet{
+   .teams{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .strengths-and-weaknesses{
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      padding-inline: 45px;
+      padding-bottom: 15px;
+   }
 }
