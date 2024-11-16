@@ -9,10 +9,17 @@
         font-family: $fontfamily-section-adalabers-title;
         font-weight: $fontweight-section-adalabers-title;
         font-size: $fontsize-section-adalabers-title;
-        margin-bottom: 25px;
+
+        margin-block: 25px;
     }
 
     &__article {
+
+        @include mobile {
+            .section-adalabers__socialmedia {
+                justify-content: center;
+            }
+        }
 
         @include tablet {
             display: grid;
@@ -47,7 +54,7 @@
         }
     }
 
-    &__title {
+    &__title-article {
         font-family: $fontfamily-text;
         font-weight: $fontweight-title-article;
     }
@@ -93,8 +100,7 @@
         display: flex;
 
         .section-adalabers__list-item::after {
-            content: "\00b7";
-            /* Esto es el código Unicode para el punto medio (·)*/
+            content: "·";
             margin-right: 8px;
             color: $secondary-text-color;
         }
