@@ -1,6 +1,7 @@
 .teams-strengths-and-weaknesses{
    text-align: center;
    .teams-title{
+      padding-top: 30px;
       color: $primary-color;
       font-family: $font-family-tsw-title;
       font-weight: $fontweight-tsw-title ;
@@ -51,9 +52,20 @@
    }
    .strengths-and-weaknesses{
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       gap: 30px;
       padding-inline: 45px;
       padding-bottom: 15px;
    }
+}
+
+@include desktop{
+   .teams{
+      padding-top: 15px;
+   }
+   .strengths-and-weaknesses{
+      display: flex;
+      justify-content: center;
+      gap: 45px;
+}
 }
