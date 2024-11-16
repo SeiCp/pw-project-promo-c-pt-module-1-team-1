@@ -13,6 +13,7 @@
     }
 
     &__article {
+
         @include tablet {
             display: grid;
             grid-template-columns: auto auto;
@@ -27,6 +28,10 @@
                     "socialmedia photo";
 
                 text-align: right;
+
+                .section-adalabers__socialmedia {
+                    justify-content: flex-end;
+                }
             }
         }
 
@@ -84,21 +89,18 @@
     &__socialmedia {
         color: $secondary-color;
         margin-bottom: 25px;
+        list-style-type: none;
+        display: flex;
 
-        i {
-            position: relative;
+        .section-adalabers__list-item::after {
+            content: "\00b7";
+            /* Esto es el código Unicode para el punto medio (·)*/
+            margin-right: 8px;
+            color: $secondary-text-color;
+        }
 
-            &::after {
-                content: "\00b7";
-                /* Esto es el código Unicode para el punto medio (·)*/
-                margin-left: 8px;
-                color: $secondary-text-color;
-                align-items: center;
-            }
-
-            &:last-child::after {
-                content: "";
-            }
+        .section-adalabers__list-item:last-child::after {
+            content: "";
         }
 
         @include tablet {
@@ -109,8 +111,5 @@
     .icon {
         text-decoration: none;
         color: #099d8d;
-
-        a:visited { color: black; text-decoration: none; }
     }
-    
 }
