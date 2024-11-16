@@ -14,7 +14,7 @@
    .square{
       width: 30px;
       height: 30px;
-      background-color: $background-color;
+      background-color: white;
 
       position: absolute;
       left: 50%;
@@ -41,4 +41,10 @@
       font-family: $fontfamily-text;
       margin-inline: 15px;
       }
+}
+
+@include tablet{
+.strengths-and-weaknesses{
+   display: flex;
+}
 }
