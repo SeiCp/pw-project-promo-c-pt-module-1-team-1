@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-    rel="stylesheet">
+        rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-    rel="stylesheet">
+        rel="stylesheet">
 
     <link rel="stylesheet" href="./scss/main.scss" />
 
@@ -20,32 +21,46 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
     <load src="./partials/header.html" />
 
     <section class="cover"></section>
     <section class="contact-section">
         <h2>CONTACTO</h2>
-        <p>Aquí podéis enviarnos vuestros cuervos para resolver dudas, responder preguntas o, como siempre, forjar alianzas dignas del trono. ¡Estamos a un mensaje de distancia, mi lord o mi lady!</p>
-        <form action="https://formspree.io/f/xnnqvepe" method="POST" class="contact-form">
-            <label for="name">Nombre completo <span>*</span></label>
-            <input type="text" id="name" name="name" required placeholder="Nombre...">
-
-            <label for="email">Email <span>*</span></label>
-            <input type="email" id="email" name="email" required placeholder="nombre.apellidos@mail.com">
-
-            <label for="phone">Teléfono</label>
-            <input type="tel" id="phone" name="phone" placeholder="Ej: 123456789">
-
-            <label for="message">Mensaje <span>*</span></label>
-            <textarea id="message" name="message" required placeholder="¿Qué necesitas?"></textarea>
-
-            <button type="submit">ENVIAR</button>
-
-        </form>
+        <p class="contact-section__description">Aquí podéis enviarnos vuestros cuervos para resolver dudas, responder
+            preguntas o, como siempre, forjar
+            alianzas dignas del trono. ¡Estamos a un mensaje de distancia, mi lord o mi lady!</p>
+        <h6><small>Todos los campos marcados con <span class="asterisk">*</span> son obligatorios.</small></h6>
     </section>
 
+    <form action="https://formspree.io/f/xnnqvepe" method="POST" class="contact-form">
+        <label class="contact-form__label" for="name">Nombre completo <span class="asterisk">*</span></label>
+        <input class="contact-form__input" type="text" id="name" name="name" required placeholder="Nombre...">
+
+        <div class="contact-form__emailphone">
+            <div class="contact-form__email-container">
+                <label class="contact-form__label" for="email">Email <span class="asterisk">*</span></label>
+                <input class="contact-form__input" type="email" id="email" name="email" required
+                    placeholder="nombre.apellidos@mail.com">
+            </div>
+
+            <div class="contact-form__phone-container">
+                <label class="contact-form__label" for="phone">Teléfono</label>
+                <input class="contact-form__input" type="tel" id="phone" name="phone" placeholder="Ej: 123456789">
+            </div>
+        </div>
+
+        <label class="contact-form__label" for="message">Mensaje <span class="asterisk">*</span></label>
+        <textarea class="contact-form__textarea" id="message" name="message" required
+            placeholder="¿Qué necesitas?"></textarea>
+
+        <button class="contact-form__button" type="submit">ENVIAR</button>
+
+    </form>
+
     <load src="./partials/footer.html" />
-    
+
 </body>
+
 </html>
