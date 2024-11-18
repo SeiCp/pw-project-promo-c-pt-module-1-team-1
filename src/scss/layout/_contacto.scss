@@ -16,6 +16,10 @@
     padding: 40px;
     gap: 20px;
 
+    &__title {
+        color: $primary-color;
+    }
+
     &__description {
         text-align: center;
         font-family: "Open Sans";
