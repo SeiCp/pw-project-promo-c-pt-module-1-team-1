@@ -19,9 +19,6 @@
         padding-inline: 200px;
     } 
 
-    &__name-link {
-        text-decoration: none;
-    }
 
     &__name-section {
         text-transform: uppercase;
@@ -31,14 +28,15 @@
 
     }
 
+    &__name-link {
+        text-decoration: none;
+        }
 
     &__name {
         font-family: $fontfamily-name-header;
         font-weight: $fontweight-name-header;
         font-size:$fontsize-name-header;
         color: white;
-
-        
     }
 
     &__nav {

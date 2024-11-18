@@ -86,6 +86,7 @@
         color: $secondary-text-color;
         margin-inline: 25px;
         margin-block: 25px;
+        max-width: 450px;
 
         @include tablet {
             grid-area: paragraph;
@@ -127,7 +128,7 @@
         color: #099d8d;
     }
 
-.icon:hover {
+    .icon:hover {
         color: $secondary-text-color;
     }
 
