@@ -87,22 +87,24 @@
 
     }
 
-    &__label {}
+    &__label {
 
     font-family: "Open Sans";
     font-weight: normal;
     color: $primary-text-color;
 
+    }
+
     &__input[type="text"],
     &__input[type="email"],
     &__input[type="tel"],
+
     &__textarea {
         font-family: "Open Sans";
         padding: 10px;
         border: 1px solid #b8b8b9;
         border-radius: 4px;
     }
-
 
     &__button {
         font-family: "Rubik";
